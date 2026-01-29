@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLID Principles Interactive Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        pre {
+            background: #ecf0f1;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>SOLID Principles</h1>
+    <p><b>Your Intent:</b></p>
+    <p>
+        SOLID principles help us write clean, maintainable and scalable code. Instead of creating tightly coupled
+        classes, SOLID guides us to design systems where change is easy, bugs are fewer, and logic is reusable.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Definition (From My Side)</h2>
+    <p>
+        SOLID is a set of five object-oriented design principles that improve code readability, extensibility,
+        and maintainability. It helps developers design software that is easy to understand, modify, and scale.
+    </p>
+</div>
+
+<div class="card">
+    <h2>S — Single Responsibility Principle</h2>
+    <button onclick="toggle('srp')">Show Example</button>
+    <div id="srp" class="hidden">
+        <p><b>Meaning:</b> A class should have only one reason to change.</p>
+        <pre>
+class Invoice {
+    void calculateTotal() {}
+    void printInvoice() {}
+    void saveToDB() {}
+}
+        </pre>
+        <p>Better:</p>
+        <pre>
+class InvoiceCalculator { void calculate() {} }
+class InvoicePrinter { void print() {} }
+class InvoiceRepository { void save() {} }
+        </pre>
+    </div>
+</div>
+
+<div class="card">
+    <h2>O — Open / Closed Principle</h2>
+    <button onclick="toggle('ocp')">Show Example</button>
+    <div id="ocp" class="hidden">
+        <p><b>Meaning:</b> Classes should be open for extension but closed for modification.</p>
+        <pre>
+interface Discount {
+    double apply(double price);
+}
+
+class FestivalDiscount implements Discount {
+    public double apply(double price) {
+        return price * 0.8;
+    }
+}
+        </pre>
+    </div>
+</div>
+
+<div class="card">
+    <h2>L — Liskov Substitution Principle</h2>
+    <button onclick="toggle('lsp')">Show Example</button>
+    <div id="lsp" class="hidden">
+        <p><b>Meaning:</b> Child classes should replace parent classes without breaking behavior.</p>
+        <pre>
+class Bird {
+    void fly() {}
+}
+
+class Sparrow extends Bird {}
+        </pre>
+        <p>Avoid forcing behavior that doesn't apply.</p>
+    </div>
+</div>
+
+<div class="card">
+    <h2>I — Interface Segregation Principle</h2>
+    <button onclick="toggle('isp')">Show Example</button>
+    <div id="isp" class="hidden">
+        <p><b>Meaning:</b> Do not force classes to implement unnecessary methods.</p>
+        <pre>
+interface Worker {
+    void work();
+}
+
+interface Eater {
+    void eat();
+}
+        </pre>
+    </div>
+</div>
+
+<div class="card">
+    <h2>D — Dependency Inversion Principle</h2>
+    <button onclick="toggle('dip')">Show Example</button>
+    <div id="dip" class="hidden">
+        <p><b>Meaning:</b> Depend on abstractions, not concrete classes.</p>
+        <pre>
+interface Engine {
+    void start();
+}
+
+class PetrolEngine implements Engine {
+    public void start() {}
+}
+
+class Car {
+    Engine engine;
+    Car(Engine engine) {
+        this.engine = engine;
+    }
+}
+        </pre>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Why SOLID?</h2>
+    <ul>
+        <li>Reduces tight coupling</li>
+        <li>Improves readability</li>
+        <li>Makes systems scalable</li>
+        <li>Helps in LLD interviews</li>
+        <li>Supports clean architecture</li>
+    </ul>
+</div>
+
+<script>
+    function toggle(id) {
+        const el = document.getElementById(id);
+        el.classList.toggle("hidden");
+    }
+</script>
+
+</body>
+</html>

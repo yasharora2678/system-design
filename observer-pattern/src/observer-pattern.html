@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Observer Pattern Interactive Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        pre {
+            background: #ecf0f1;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Observer Design Pattern</h1>
+    <p><b>Your Intent:</b></p>
+    <p>
+        Observer pattern helps when multiple objects need to stay updated with the state of another object.
+        Instead of tightly coupling classes, observers subscribe to an observable and get notified automatically
+        whenever state changes.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Definition</h2>
+    <p>
+        The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state,
+        all its dependents are notified and updated automatically.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Pattern Type</h2>
+    <p>
+        Observer is a <b>Behavioral Design Pattern</b>.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Why Observer Is Behavioral?</h2>
+    <p>
+        Behavioral patterns focus on communication and responsibility between objects.
+        Observer is behavioral because it manages how objects interact and notify each other when behavior/state changes.
+        It does not focus on object creation or structure, but on how objects collaborate at runtime.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Problem Without Observer</h2>
+    <button onclick="toggle('problem')">Show Problem</button>
+    <div id="problem" class="hidden">
+        <p>
+            Suppose many services depend on stock updates. Without observer, the subject must manually call each service.
+            This creates tight coupling and messy code.
+        </p>
+        <pre>
+if(stockAvailable) {
+    emailService.send();
+    smsService.send();
+    appService.push();
+}
+        </pre>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Solution With Observer</h2>
+    <button onclick="toggle('solution')">Show Solution</button>
+    <div id="solution" class="hidden">
+        <pre>
+interface Observer {
+    void update();
+}
+
+interface Observable {
+    void add(Observer o);
+    void remove(Observer o);
+    void notifyObservers();
+}
+
+class EmailObserver implements Observer {
+    public void update() {
+        System.out.println("Email sent");
+    }
+}
+        </pre>
+        <p>
+            Now observers subscribe and are notified automatically.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Real World Example</h2>
+    <ul>
+        <li>YouTube Subscribers</li>
+        <li>Stock Market Apps</li>
+        <li>Notification Systems</li>
+        <li>Event Listeners</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Why Use Observer Pattern?</h2>
+    <ul>
+        <li>Loose coupling</li>
+        <li>Scalable notification system</li>
+        <li>Supports Open/Closed principle</li>
+        <li>Dynamic subscription</li>
+        <li>Cleaner architecture</li>
+    </ul>
+</div>
+
+<script>
+function toggle(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
