@@ -10,10 +10,13 @@
       <module fileurl="file://$PROJECT_DIR$/decorator-pattern/decorator-pattern.iml" filepath="$PROJECT_DIR$/decorator-pattern/decorator-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/facade-pattern/facade-pattern.iml" filepath="$PROJECT_DIR$/facade-pattern/facade-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/factory-pattern/factory-pattern.iml" filepath="$PROJECT_DIR$/factory-pattern/factory-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flyweight-pattern/flyweight-pattern.iml" filepath="$PROJECT_DIR$/flyweight-pattern/flyweight-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flyweight-pattern/issue/issue.iml" filepath="$PROJECT_DIR$/flyweight-pattern/issue/issue.iml" />
       <module fileurl="file://$PROJECT_DIR$/notification-engine/notification-engine.iml" filepath="$PROJECT_DIR$/notification-engine/notification-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/prototype-pattern/prototype-pattern.iml" filepath="$PROJECT_DIR$/prototype-pattern/prototype-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-pattern/proxy-pattern.iml" filepath="$PROJECT_DIR$/proxy-pattern/proxy-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleton-desgin-pattern/singleton-desgin-pattern.iml" filepath="$PROJECT_DIR$/singleton-desgin-pattern/singleton-desgin-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flyweight-pattern/solution/solution.iml" filepath="$PROJECT_DIR$/flyweight-pattern/solution/solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/system-desgin.iml" filepath="$PROJECT_DIR$/.idea/system-desgin.iml" />
     </modules>
   </component>
