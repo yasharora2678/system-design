@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/adapter-pattern/adapter-pattern.iml" filepath="$PROJECT_DIR$/adapter-pattern/adapter-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bridge-design-pattern/bridge-design-pattern.iml" filepath="$PROJECT_DIR$/bridge-design-pattern/bridge-design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/builder-pattern/builder-pattern.iml" filepath="$PROJECT_DIR$/builder-pattern/builder-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/chain-of-responsibility-pattern/chain-of-responsibility-pattern.iml" filepath="$PROJECT_DIR$/chain-of-responsibility-pattern/chain-of-responsibility-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/composite-design-pattern/composite-design-pattern.iml" filepath="$PROJECT_DIR$/composite-design-pattern/composite-design-pattern.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/facade-pattern/facade-pattern.iml" filepath="$PROJECT_DIR$/facade-pattern/facade-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/factory-pattern/factory-pattern.iml" filepath="$PROJECT_DIR$/factory-pattern/factory-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/notification-engine/notification-engine.iml" filepath="$PROJECT_DIR$/notification-engine/notification-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prototype-pattern/prototype-pattern.iml" filepath="$PROJECT_DIR$/prototype-pattern/prototype-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-pattern/proxy-pattern.iml" filepath="$PROJECT_DIR$/proxy-pattern/proxy-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleton-desgin-pattern/singleton-desgin-pattern.iml" filepath="$PROJECT_DIR$/singleton-desgin-pattern/singleton-desgin-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/system-desgin.iml" filepath="$PROJECT_DIR$/.idea/system-desgin.iml" />
