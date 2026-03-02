@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/bridge-design-pattern/bridge-design-pattern.iml" filepath="$PROJECT_DIR$/bridge-design-pattern/bridge-design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/builder-pattern/builder-pattern.iml" filepath="$PROJECT_DIR$/builder-pattern/builder-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/chain-of-responsibility-pattern/chain-of-responsibility-pattern.iml" filepath="$PROJECT_DIR$/chain-of-responsibility-pattern/chain-of-responsibility-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/command-design-pattern/command-design-pattern.iml" filepath="$PROJECT_DIR$/command-design-pattern/command-design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/composite-design-pattern/composite-design-pattern.iml" filepath="$PROJECT_DIR$/composite-design-pattern/composite-design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/decorator-pattern/decorator-pattern.iml" filepath="$PROJECT_DIR$/decorator-pattern/decorator-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/facade-pattern/facade-pattern.iml" filepath="$PROJECT_DIR$/facade-pattern/facade-pattern.iml" />
